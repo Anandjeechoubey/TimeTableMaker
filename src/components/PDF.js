@@ -86,7 +86,7 @@ const PDF = (props) => {
         <p>{props.content}</p>
       </div>
       <Pdf targetRef={ref} x={.5} y={.5} scale={.9} options={{orientation: 'landscape'}} filename="timetable.pdf">
-        {({ toPdf }) => <button onClick={toPdf}>Save as PDF</button>}
+        {({ toPdf }) => <button onClick={toPdf} className="button">Save as PDF</button>}
       </Pdf>
     </>
   );
